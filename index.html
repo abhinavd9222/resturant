@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .page1{
+            height: 96vh;
+            width: 100%;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/024/569/565/large_2x/food-ingredients-for-italian-pasta-illustration-ai-generative-free-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container{
+            height: 80vh;
+            width: 80vh;
+            /* background-color: white; */
+            margin-top: 90px;
+            margin-left: 80vh;
+            text-align: center;
+
+        }
+        .h2{
+            font-style: italic;
+            color: orangered;
+            font-size: 55px;margin: 170px;
+            font-weight: bold;
+      
+
+        }
+        #h1{
+            font-style: italic;
+            color: white;
+            font-size: 70px;
+            margin-top: -170px;
+            font-weight: bold;
+            
+        }
+        #bt{
+            width: 100px;
+            height: 35px;
+            border-radius: 50px;
+            border: 0px;
+            background-color: rgb(230, 230, 59);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <div class="container">
+        <h2 class="h2">Welcome</h2>
+        <h1 id="h1">
+           To Our Rastaurant </h1>
+           <button id="bt">visit here</button>
+        </div>
+    </div>
+    <script>
+        const bt = document.getElementById("bt");
+        bt.addEventListener('click', ()=>{ 
+            window.location.href = "./second-page.html";
+        })
+    </script>
+</body>
+</html>

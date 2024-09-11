@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<style>
+    nav {
+        background-color: #7e7b77;
+        ;
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+
+        padding: 10px, 15px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #444;
+    }
+
+    nav ul li button {
+        background-color: #f2f2f2;
+        color: #333;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    nav ul li button:hover {
+        background-color: #ddd;
+    }
+
+    .btn {
+        color: white;
+        background-color: rgb(247, 247, 61);
+        margin-left: 10vh;
+    }
+
+    .container-imgs {
+        width: 90%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .part1 {
+        height: 40vh;
+        width: 90%;
+         /* background-color: #333; */
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        height: 40vh;
+        width: 18%;
+        border-radius: 20px;
+
+    }
+    .card-img{
+        height: 30vh;
+        width: 100%;  
+         border-radius: 20px 20px 0 0;
+    }
+    .gray {
+        color: gray;
+
+        font-size: 13px;
+    }
+    .statar {
+        font-size: 20vh;
+        color: white;
+        text-shadow: 1px 1px 0px black, -2px -2px 0px black, 2px -1px 0px black, -1px 2px 0px black;
+        margin-top: 60PX;
+        margin-left: 100px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="veg.html">VEG-FOOD</a></li>
+            <li><a href="#">Nonveg-FOOD</a></li>
+            <li><a href="#">CART</a></li>  
+
+            <li><button class="btn">SHOP NOW</button></li>
+        </ul>
+    </nav>
+    <h3>Inspiration for your first order</h3>
+    <div style="display: flex; justify-content: center;">
+        <div class="container-imgs">
+            <div>
+                <img src="https://freepngimg.com/thumb/pizza/19-pizza-png-image.png" alt=""
+                    style="height: 8rem; width: 8rem; margin-top: 15px;">
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/R.d1a7153f003edfbf950ccddde37e726f?rik=as25KvDOwqFjig&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f16%2fBacon-Cheese-Burger-PNG-File.png&ehk=a8MfiNRfl1CgWEUCsTWQ0FznuGS%2f9ljO6U1%2fiB333EA%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://www.nicepng.com/png/full/964-9642029_veg-biryani-biryani.png" alt=""
+                    style="width: 8rem;height: 8rem; margin-top: 15px;">
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.mF9tthgfIhzexRKLqHGA3gAAAA?rs=1&pid=ImgDetMain" alt="">
+            </div>
+            <div>
+                <img src="https://png.pngtree.com/png-vector/20240104/ourmid/pngtree-delicious-veg-roll-png-image_11403008.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.NgVvzE16-fPzlN4gKedVTQHaHa?rs=1&pid=ImgDetMain" alt="">
+            </div>
+            <div>
+                <img src="https://png.pngtree.com/png-clipart/20230724/ourmid/pngtree-chicken-tikka-png-image_8422092.png" alt=""
+                    style="height: 8rem;width: 8rem;margin-top: 15px;">
+            </div>
+            <div>
+                <img src="https://pngimg.com/uploads/cake/cake_PNG13097.png" alt=""
+                    style="height: 7rem; width: 7rem;margin-top: 20px; ">
+            </div>
+            <div>
+                <img src="https://pngimg.com/d/noodle_PNG15.png" alt="" style="width: 8rem; height: 8rem;">
+            </div>
+        </div>
+
+    </div>
+    <div class="statar">
+        <h1>Order food online in..</h1>
+    </div>
+
+    <div class="main">
+        <div class="part1">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.QjwJpjRlVJVA7g2SQiRWqgAAAA?rs=1&pid=ImgDetMain" alt=""
+                    class="card-img">
+                <div class="cr-2" style="display: flex">
+                    <div class="text-1" style="width: 75%;">
+                    <p class="lebal" style="font-weight: bold; ">egg omelet</p>
+                    <p class="gray">egg omelet...</p>
+                </div>
+                <div class="text-2">
+                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.2*</button>
+                   <p class="gray">price-150</p>
+
+                </div>
+                  
+
+              
+                     
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.lJT2t2V9bSDNuwYLBcFqngHaEK?rs=1&pid=ImgDetMain" alt=""
+                        class="card-img">
+                    <div class="cr-2" style="display: flex">
+                        <div class="text-1" style="width: 75%;">
+                        <p class="lebal" style="font-weight: bold; ">chicken lollipop</p>
+                        <p class="gray">chicken lollipop</p>
+                    </div>
+                    <div class="text-2">
+                        <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                        <p class="gray"> price-300</p>
+    
+                    </div>
+                      
+    
+                  
+                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.hUnbzHW2uHcb2D65nbbvuQHaE9?rs=1&pid=ImgDetMain" alt=""
+                            class="card-img">
+                        <div class="cr-2" style="display: flex">
+                            <div class="text-1" style="width: 75%;">
+                            <p class="lebal" style="font-weight: bold; ">chicken tikka</p>
+                            <p class="gray">chicken tikka..</p>
+                        </div>
+                        <div class="text-2">
+                            <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                            <p class="gray">price-350</p>
+        
+                        </div>
+                          
+        
+                      
+                             
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.21xfGQ9jUczQhBfBTgASHwHaEJ?rs=1&pid=ImgDetMain" alt=""
+                                class="card-img">
+                            <div class="cr-2" style="display: flex">
+                                <div class="text-1" style="width: 75%;">
+                                <p class="lebal" style="font-weight: bold; ">tandoori chicken</p>
+                                <p class="gray">tandoori chicken..</p>
+                            </div>
+                            <div class="text-2">
+                                <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                                <p class="gray">price-500</p>
+            
+                            </div>
+                              
+            
+                          
+                                 
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://www.makeitgrateful.com/wp-content/uploads/2019/02/how-to-make-perfect-hardboiled-eggs.jpg" alt=""
+                                    class="card-img">
+                                <div class="cr-2" style="display: flex">
+                                    <div class="text-1" style="width: 75%;">
+                                    <p class="lebal" style="font-weight: bold; ">boiled egg</p>
+                                    <p class="gray">boiled egg</p>
+                                </div>
+                                <div class="text-2">
+                                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                                    <p class="gray">price-100</p>
+                
+                                </div>
+                                  
+                
+                              
+                                     
+                                    </div>
+                                </div>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="part1">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.xTpRNWDn8wFGL-hSwPWtxQHaE6?rs=1&pid=ImgDetMain" alt=""
+                    class="card-img">
+                <div class="cr-2" style="display: flex">
+                    <div class="text-1" style="width: 75%;">
+                    <p class="lebal" style="font-weight: bold; ">mutton lollipop</p>
+                    <p class="gray">mutton lollipop...</p>
+                </div>
+                <div class="text-2">
+                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                   <p class="gray">price-250</p>
+
+                </div>
+                  
+
+              
+                     
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Q4f5lR46RdwAqe9hXJ7dlAHaF7?rs=1&pid=ImgDetMain" alt=""
+                        class="card-img">
+                    <div class="cr-2" style="display: flex">
+                        <div class="text-1" style="width: 75%;">
+                        <p class="lebal" style="font-weight: bold; ">chicken biryani</p>
+                        <p class="gray">chicken biryani...</p>
+                    </div>
+                    <div class="text-2">
+                        <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                       <p class="gray">price-400</p>
+    
+                    </div>
+                      
+    
+                  
+                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/R.677f6301cd54a3ff57a899ca0cd1698b?rik=4SM6xnWcHKRJFw&riu=http%3a%2f%2fyestoyolks.com%2fwp-content%2fuploads%2f2016%2f01%2fIMG_9057.jpg&ehk=wegYDuGZkahWnr8O%2bQZSkVcvamnnMgWBHjhdnmYYWqg%3d&risl=&pid=ImgRaw&r=0" alt=""
+                            class="card-img">
+                        <div class="cr-2" style="display: flex">
+                            <div class="text-1" style="width: 75%;">
+                            <p class="lebal" style="font-weight: bold; ">chicken shandwich</p>
+                            <p class="gray">chicken shandwich...</p>
+                        </div>
+                        <div class="text-2">
+                            <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.0*</button>
+                           <p class="gray">price-200</p>
+        
+                        </div>
+                          
+        
+                      
+                             
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/R.efadc703620f204fa4cd201e95d6183f?rik=T7sET6QNCNLRAA&riu=http%3a%2f%2fpizzamaruusa.com%2fwp-content%2fuploads%2f2016%2f01%2fGarlic-chicken-barbecue-Pizza.jpg&ehk=Z3LubOHBrIYOZmfvxfDd%2fPXHjuTUnj3Voq8VIRc6VNk%3d&risl=&pid=ImgRaw&r=0" alt=""
+                                class="card-img">
+                            <div class="cr-2" style="display: flex">
+                                <div class="text-1" style="width: 75%;">
+                                <p class="lebal" style="font-weight: bold; ">chicken pizza</p>
+                                <p class="gray">chicken pizza...</p>
+                            </div>
+                            <div class="text-2">
+                                <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                                <p class="gray">price-400</p>
+                               
+            
+                            </div>
+                              
+            
+                          
+                                 
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://www.whiskaffair.com/wp-content/uploads/2020/04/Kadai-Chicken-1.jpg" alt=""
+                                    class="card-img">
+                                <div class="cr-2" style="display: flex">
+                                    <div class="text-1" style="width: 75%;">
+                                    <p class="lebal" style="font-weight: bold; ">Kadai-Chicken</p>
+                                    <p class="gray">Kadai-Chicken..</p>
+                                </div>
+                                <div class="text-2">
+                                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.2*</button>
+                                    <p class="gray">price-300</p>
+                                   
+                
+                                </div>
+                                  
+                
+                              
+                                     
+                                    </div>
+                                </div>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="part1">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/8D-5kES9GG0/maxresdefault.jpg" alt=""
+                    class="card-img">
+                <div class="cr-2" style="display: flex">
+                    <div class="text-1" style="width: 75%;">
+                    <p class="lebal" style="font-weight: bold; ">chicken roll</p>
+                    <p class="gray">chicken roll</p>
+                </div>
+                <div class="text-2">
+                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.5*</button>
+                    <p class="gray">price-300</p>
+
+                   
+
+                </div>
+                  
+
+              
+                     
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Y58hHcbjO4HIk_F0Chz-OwHaEK?rs=1&pid=ImgDetMain" alt=""
+                        class="card-img">
+                    <div class="cr-2" style="display: flex">
+                        <div class="text-1" style="width: 75%;">
+                        <p class="lebal" style="font-weight: bold; ">chicken mooms</p>
+                        <p class="gray">checken mooms....</p>
+                    </div>
+                    <div class="text-2">
+                        <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.0*</button>
+                       <p class="gray">price-200</p>
+    
+                    </div>
+                      
+    
+                  
+                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.X71tXMDgd0uGU2phazMj3QHaE8?rs=1&pid=ImgDetMain" alt=""
+                            class="card-img">
+                        <div class="cr-2" style="display: flex">
+                            <div class="text-1" style="width: 75%;">
+                            <p class="lebal" style="font-weight: bold; ">checken curry</p>
+                            <p class="gray">checken curry...</p>
+                        </div>
+                        <div class="text-2">
+                            <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.5*</button>
+                            <p class="gray"> price-500</p>
+        
+                        </div>
+                          
+        
+                      
+                             
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://www.whiskaffair.com/wp-content/uploads/2020/04/Kerala-Egg-Curry-3.jpg" alt=""
+                                class="card-img">
+                            <div class="cr-2" style="display: flex">
+                                <div class="text-1" style="width: 75%;">
+                                <p class="lebal" style="font-weight: bold; ">egg curry</p>
+                                <p class="gray">egg curry</p>
+                            </div>
+                            <div class="text-2">
+                                <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.2*</button>
+                                <p class="gray">price-300</p>
+            
+                            </div>
+                              
+            
+                          
+                                 
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.R_HOz3FyZSxuOISsrAv1CwHaJ2?rs=1&pid=ImgDetMain" alt=""
+                                    class="card-img">
+                                <div class="cr-2" style="display: flex">
+                                    <div class="text-1" style="width: 75%;">
+                                    <p class="lebal" style="font-weight: bold; ">mutton curry</p>
+                                    <p class="gray">mutton curry..</p>
+                                </div>
+                                <div class="text-2">
+                                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.8*</button>
+                                    <p class="gray">price-400</p>
+                
+                                </div>
+                                  
+                
+                              
+                                     
+                                    </div>
+                                </div>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="part1">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.709e3bfce561d470e56aa99812a22af3?rik=R%2f6nx6sQbNBfLA&riu=http%3a%2f%2fhealthyliving.natureloc.com%2fwp-content%2fuploads%2f2018%2f08%2flucknowi-mutton-biryani-recipe.jpg&ehk=9ylUavyCjr8TP6aCiHd%2b6U1q03Z4IXWmQ6w9nPus7io%3d&risl=&pid=ImgRaw&r=0" alt=""
+                    class="card-img">
+                <div class="cr-2" style="display: flex">
+                    <div class="text-1" style="width: 75%;">
+                    <p class="lebal" style="font-weight: bold; ">mutton biryani</p>
+                    <p class="gray">mutton biryani</p>
+                </div>
+                <div class="text-2">
+                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.0*</button>
+                    <p class="gray">price-500</p>
+
+                   
+
+                </div>
+                  
+
+              
+                     
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Vm-iM5hn-PUUZUuXZwXGkQHaEs?rs=1&pid=ImgDetMain" alt=""
+                        class="card-img">
+                    <div class="cr-2" style="display: flex">
+                        <div class="text-1" style="width: 75%;">
+                        <p class="lebal" style="font-weight: bold; "> south indian thali</p>
+                        <p class="gray">south indian thali..</p>
+                    </div>
+                    <div class="text-2">
+                        <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.0*</button>
+                       <p class="gray">price-800</p>
+    
+                    </div>
+                      
+    
+                  
+                         
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/indian-nonveg-thali-food-platter-consists-variety-veggieschicken-meat-lentils-sweet-dish-snacks-etc-selective-focus_726363-574.jpg?w=2000" alt=""
+                            class="card-img">
+                        <div class="cr-2" style="display: flex">
+                            <div class="text-1" style="width: 75%;">
+                            <p class="lebal" style="font-weight: bold; ">north
+                                indian thali
+                            </p>
+                            <p class="gray">north indian thali...</p>
+                        </div>
+                        <div class="text-2">
+                            <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.5*</button>
+                            <p class="gray"> price-500</p>
+        
+                        </div>
+                          
+        
+                      
+                             
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://static.toiimg.com/photo/75554702.cms" alt=""
+                                class="card-img">
+                            <div class="cr-2" style="display: flex">
+                                <div class="text-1" style="width: 75%;">
+                                <p class="lebal" style="font-weight: bold; ">roti</p>
+                                <p class="gray">roti..</p>
+                            </div>
+                            <div class="text-2">
+                                <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">4.2*</button>
+                                <p class="gray">price-100</p>
+            
+                            </div>
+                              
+            
+                          
+                                 
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.moy31HQ9hd7rm4_nNFi1LwHaE6?rs=1&pid=ImgDetMain" alt=""
+                                    class="card-img">
+                                <div class="cr-2" style="display: flex">
+                                    <div class="text-1" style="width: 75%;">
+                                    <p class="lebal" style="font-weight: bold; ">egg bhurji</p>
+                                    <p class="gray">egg bhurji..</p>
+                                </div>
+                                <div class="text-2">
+                                    <button class="bat"  style="font-size: 10px; font-weight: bold; height: 20px; width: 40px; border-radius: 5px;border: 0px; background-color: rgb(98, 215, 98); margin-top: 5px;">3.8*</button>
+                                    <p class="gray">price-200</p>
+                
+                                </div>
+                                  
+                
+                              
+                                     
+                                    </div>
+                                    
+                                </div>
+                </div>
+
+                
+
+                
+
+    
+</body>
+
+</html>
